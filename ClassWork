@@ -1,1 +1,161 @@
-
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/charukashyap-290/Davis_Training/blob/main/ClassWork\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to print 20 sentences in dufferent lines.\n",
+        "\n",
+        "sentences = []\n",
+        "\n",
+        "# take input\n",
+        "for i in range(1, 21):\n",
+        "    s = input(f\"Enter sentence {i}: \")\n",
+        "    sentences.append(s)\n",
+        "\n",
+        "print(\"\\n--- Your Sentences ---\")\n",
+        "\n",
+        "# Print im\n",
+        "for s in sentences:\n",
+        "    print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vLyu2y90y9zJ",
+        "outputId": "ad9b29b8-8530-4726-adbb-532a3b771c81"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter sentence 1: hi \n",
+            "Enter sentence 2: hello\n",
+            "Enter sentence 3: how\n",
+            "Enter sentence 4: do \n",
+            "Enter sentence 5: you\n",
+            "Enter sentence 6: do\n",
+            "Enter sentence 7: hey\n",
+            "Enter sentence 8: kitty\n",
+            "Enter sentence 9: beauty\n",
+            "Enter sentence 10: with \n",
+            "Enter sentence 11: the \n",
+            "Enter sentence 12: beast\n",
+            "Enter sentence 13: hello\n",
+            "Enter sentence 14: guys\n",
+            "Enter sentence 15: its\n",
+            "Enter sentence 16: charu \n",
+            "Enter sentence 17: i \n",
+            "Enter sentence 18: belongs\n",
+            "Enter sentence 19: to \n",
+            "Enter sentence 20: modinagar\n",
+            "\n",
+            "--- Your Sentences ---\n",
+            "hi \n",
+            "hello\n",
+            "how\n",
+            "do \n",
+            "you\n",
+            "do\n",
+            "hey\n",
+            "kitty\n",
+            "beauty\n",
+            "with \n",
+            "the \n",
+            "beast\n",
+            "hello\n",
+            "guys\n",
+            "its\n",
+            "charu \n",
+            "i \n",
+            "belongs\n",
+            "to \n",
+            "modinagar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to open the file.\n",
+        "\n",
+        "#to open file for real operation\n",
+        "filev=open(\"first file.txt\",\"r\")\n",
+        "#to check file is open or not\n",
+        "if(filev):\n",
+        "  #to read data from file\n",
+        "  data=filev.read()\n",
+        "  print(data)\n",
+        "  print(\"-------------------\")\n",
+        "  print(\"no. of character:\",len(data))\n",
+        "  #to closing file\n",
+        "  filev.close()\n",
+        "  else:\n",
+        "    print(\"unable to open the file\")"
+      ],
+      "metadata": {
+        "id": "0iZFHm1u4G22"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#write a program to find the number of vowles in the given file.\n",
+        "\n",
+        "# Open the file in read mode\n",
+        "file = open(\"sample.txt\", \"r\")\n",
+        "\n",
+        "text = file.read()\n",
+        "\n",
+        "# Initialize vowel count\n",
+        "count = 0\n",
+        "\n",
+        "# Define vowels\n",
+        "vowels = \"aeiouAEIOU\"\n",
+        "\n",
+        "# Count vowels\n",
+        "for ch in text:\n",
+        "    if ch in vowels:\n",
+        "        count += 1\n",
+        "\n",
+        "print(\"Number of vowels in file:\", count)\n",
+        "\n",
+        "file.close()"
+      ],
+      "metadata": {
+        "id": "5u76zTdI4ulu"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
