@@ -1,1 +1,14 @@
+# Identify the longest line in a file and print its length and content
+max_length = 0
+longest_line = ""
 
+with open("input.txt", "r") as file:
+    for line in file:
+        length = len(line.strip())   # remove newline
+        
+        if length > max_length:
+            max_length = length
+            longest_line = line.strip()
+
+print("Longest Line:", longest_line)
+print("Length:", max_length)
