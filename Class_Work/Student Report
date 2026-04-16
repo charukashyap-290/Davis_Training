@@ -1,1 +1,23 @@
+# Student Report Filter
+A file students.txt contains records in format:
+Name,Marks,City
+Extract and save only students scoring above 75 into a new file
 
+#Algorithm :- Open student.txt in read mode
+              Open new file (say output.txt) in write mode
+              Read file line by line
+              Split each line using comma ,
+              Extract marks------>If marks ≥ 75 → write that line into new file Repeat till end Close files
+#Code
+with open("student.txt", "r") as f, open("output.txt", "w") as out:
+    for line in f:
+        data = line.strip().split(",")   # split into list
+        
+        name = data[0]
+        marks = int(data[1])
+        sign = data[2]
+        
+        if marks >= 75:
+            out.write(line)
+
+print("Filtered data saved in output.txt")
