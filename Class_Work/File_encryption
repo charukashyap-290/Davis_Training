@@ -1,1 +1,22 @@
+# Encrypt file content using a simple Caesar Cipher and save to new file
+shift = 3
 
+# Read file
+with open("input.txt", "r") as f:
+    text = f.read()
+
+result = ""
+
+# Encrypt text
+for ch in text:
+    if ch.isalpha():
+        base = ord('a') if ch.islower() else ord('A')
+        result += chr((ord(ch) - base + shift) % 26 + base)
+    else:
+        result += ch
+
+# Write encrypted content
+with open("encrypted.txt", "w") as f:
+    f.write(result)
+
+print("Encryption done successfully!")
