@@ -1,1 +1,19 @@
+''' 
+You have two files: file1.txt and file2.txt. Merge them into a new file with line numbers
+'''
 
+line_no = 1
+
+with open("file1.txt", "r") as f1, open("file2.txt", "r") as f2, open("merged.txt", "w") as out:
+    
+    # Read file1
+    for line in f1:
+        out.write(f"{line_no}. {line}")
+        line_no += 1
+    
+    # Read file2
+    for line in f2:
+        out.write(f"{line_no}. {line}")
+        line_no += 1
+
+print("Files merged with line numbers successfully!")
