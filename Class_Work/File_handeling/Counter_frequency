@@ -1,1 +1,45 @@
+#Word Frequency Counter
+Given a file article.txt,
+Count frequency of each word (ignore case and punctuation)
 
+Algorithm :- Open article.txt in read mode
+              Read full content of file
+              Convert text to lowercase (ignore case)
+              Remove punctuation (.,!? etc.)
+              Split text into words
+              Create empty dictionary for frequency
+              For each word:
+                        If word exists → increment count
+                        Else → add with count = 1
+                        Display word frequencies
+
+#Code:-
+import string   # for punctuation removal
+
+# open file
+with open("article.txt", "r") as file:
+    text = file.read()
+
+# convert to lowercase (ignore case)
+text = text.lower()
+
+# remove punctuation
+for ch in string.punctuation:
+    text = text.replace(ch, "")
+
+# split into words
+words = text.split()
+
+# dictionary to store frequency
+freq = {}
+
+# counting frequency
+for word in words:
+    if word in freq:
+        freq[word] += 1   # increase count
+    else:
+        freq[word] = 1    # first time
+
+# display result
+for word, count in freq.items():
+    print(word, ":", count)
