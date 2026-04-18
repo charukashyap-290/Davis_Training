@@ -1,1 +1,24 @@
+#A file contains repeated lines due to logging errors.
+#Create a new file with only unique lines (preserve order)
+#Algorithm :- 
+            Open input file in read mode
+            Open output file in write mode
+            Create an empty set seen
+            Read file line by line
+            For each line:
+                       If line not in seen:
+                       Write it to output file
+                       Add it to seen
+                        Close files
+#code:- 
+# open input and output files
+with open("input.txt", "r") as f, open("output.txt", "w") as out:
+    
+    seen = set()   # to store unique lines
+    
+    for line in f:
+        if line not in seen:
+            out.write(line)   # write unique line
+            seen.add(line)    # mark as seen
 
+print("Duplicate lines removed successfully")
