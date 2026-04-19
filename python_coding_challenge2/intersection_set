@@ -1,0 +1,11 @@
+# This program finds intersection of two sets
+
+set1 = {1, 2}
+set2 = {2, 3}
+
+result = set1.intersection(set2)   # common elements
+
+print(result)
+
+# Output:
+# {2}
