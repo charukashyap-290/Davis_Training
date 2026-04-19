@@ -1,0 +1,11 @@
+# This program finds union of two sets
+
+set1 = {1, 2}
+set2 = {2, 3}
+
+result = set1.union(set2)   # combine both sets
+
+print(result)
+
+# Output:
+# {1, 2, 3}
