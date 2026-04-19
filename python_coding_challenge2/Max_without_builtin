@@ -1,0 +1,17 @@
+# This program finds maximum element without using built-in functions
+
+# Given list
+lst = [5, 8, 2]
+
+max_val = lst[0]   # assume first element is maximum
+
+# Loop through list
+for i in lst:
+    if i > max_val:   # compare each element
+        max_val = i   # update maximum
+
+# Print result
+print(max_val)
+
+# Output:
+# 8
