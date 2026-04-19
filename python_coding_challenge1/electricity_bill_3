@@ -1,0 +1,21 @@
+#Question 16: A shopkeeper wants to calculate total bill after discount.
+#Input: Enter price and discount percentage
+#Output: Final price after discount
+# Retry input until valid
+
+while True:
+    price = float(input("Enter price: "))
+    discount = float(input("Enter discount %: "))
+
+    if price > 0 and 0 <= discount <= 100:
+        break
+    print("Invalid input, try again.")
+
+final_price = price - (price * discount / 100)
+
+print("Final price:", final_price)
+#Output
+     
+Enter price: 2300
+Enter discount %: 2
+Final price: 2254.0
