@@ -1,0 +1,10 @@
+# This program converts list to tuple
+
+lst = [1, 2, 3]
+
+t = tuple(lst)   # convert list to tuple
+
+print(t)
+
+# Output:
+# (1, 2, 3)
