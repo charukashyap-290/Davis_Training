@@ -1,0 +1,13 @@
+#Question5 Create a function to calculate simple interest.
+#Input: Enter P, R, T
+#Output: Simple Interest
+principle = float(input("Enter the Principle:"))
+rate = float(input("Enter the Rate:"))
+time = float (input("Enter the Timr:"))
+simple_interest = (principle * rate * time)
+print("Simple Interset",simple_interest)
+     #Output
+Enter the Principle:2000
+Enter the Rate:20
+Enter the Timr:1
+Simple Interset 40000.0
