@@ -1,0 +1,19 @@
+# This program finds second largest element in a list
+
+lst = [10, 20, 5, 15]
+
+largest = second = -99999   # initial small values
+
+# Loop through list
+for i in lst:
+    if i > largest:
+        second = largest   # update second largest
+        largest = i
+    elif i > second and i != largest:
+        second = i
+
+# Print result
+print(second)
+
+# Output:
+# 15
