@@ -1,0 +1,14 @@
+#Question 21: A shopkeeper wants to calculate total bill after discount.
+#Input: Enter price and discount percentage
+#Output: Final price after discount
+
+# Using map for input
+
+price, discount = map(float, input("Enter price and discount: ").split())
+
+final_price = price * (1 - discount / 100)
+
+print("Final price:", final_price)
+    #Output 
+Enter price and discount: 2000 2
+Final price: 1960.0
