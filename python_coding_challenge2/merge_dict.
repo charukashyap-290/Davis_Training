@@ -1,0 +1,22 @@
+# This program merges two dictionaries
+
+# Step 1: create two dictionaries
+d1 = {"a": 1}
+d2 = {"b": 2}
+
+# Step 2: create new dictionary to store result
+merged = {}
+
+# Step 3: add elements of first dictionary
+for key in d1:
+    merged[key] = d1[key]
+
+# Step 4: add elements of second dictionary
+for key in d2:
+    merged[key] = d2[key]
+
+# Step 5: print merged dictionary
+print(merged)
+
+# Output:
+# {'a': 1, 'b': 2}
