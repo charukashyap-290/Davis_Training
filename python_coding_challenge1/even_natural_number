@@ -1,0 +1,14 @@
+#Question 9: Print all even numbers between 1 to N.
+#Input: Enter N
+#Output: Even numbers list
+# Using step in range (optimized)
+
+n = int(input("Enter value of N: "))
+
+print("Even numbers are:")
+for num in range(2, n + 1, 2):
+    print(num, end=" ")
+   #Output  
+Enter value of N: 20
+Even numbers are:
+2 4 6 8 10 12 14 16 18 20 
