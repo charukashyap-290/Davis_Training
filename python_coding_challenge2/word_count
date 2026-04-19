@@ -1,0 +1,13 @@
+# This program counts number of words in a sentence
+
+# Take input
+s = input("Enter sentence: ")
+
+words = s.split()   # split into words
+
+# Print number of words
+print(len(words))
+
+# Output:
+# Enter sentence: Python is great
+# 3
