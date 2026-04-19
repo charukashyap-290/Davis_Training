@@ -1,0 +1,20 @@
+# This program finds the longest word in a sentence
+
+# Take input
+s = input("Enter sentence: ")
+
+words = s.split()   # split into words
+
+longest = ""
+
+# Loop through words
+for word in words:
+    if len(word) > len(longest):   # compare lengths
+        longest = word
+
+# Print result
+print(longest)
+
+# Output:
+# Enter sentence: I love programming
+# programming
