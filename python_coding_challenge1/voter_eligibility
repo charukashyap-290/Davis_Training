@@ -1,0 +1,18 @@
+#Question 7: Check whether a person is eligible to vote.
+#Input: Enter age
+#Output: Eligible / Not Eligible
+# Using ternary operator (short logic)
+
+# Program to check voting eligibility
+
+# Taking input from user
+age = int(input("Enter your age: "))
+
+# Checking eligibility
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+    #Output 
+Enter your age: 12
+You are not eligible to vote.
