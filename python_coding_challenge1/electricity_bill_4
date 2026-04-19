@@ -1,0 +1,22 @@
+#Question 18: Calculate electricity bill based on units consumed.
+#Input: Enter units
+#Output: Total bill amount
+# Using while loop step calculation
+
+units = int(input("Enter units: "))
+bill = 0
+
+i = 1
+while i <= units:
+    if i <= 100:
+        bill += 5
+    elif i <= 200:
+        bill += 7
+    else:
+        bill += 10
+    i += 1
+
+print("Total bill:", bill)
+   #Output  
+Enter units: 12
+Total bill: 60
