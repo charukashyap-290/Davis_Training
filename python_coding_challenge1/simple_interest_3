@@ -1,0 +1,21 @@
+#Question 15: Create a function to calculate simple interest.
+#Input: Enter P, R, T
+#Output: Simple Interest
+# Function to calculate simple interest
+
+def simple_interest(p, r, t):
+    si = (p * r * t) / 100
+    print("Simple Interest is:", si)
+
+# Input
+p = float(input("Enter Principal: "))
+r = float(input("Enter Rate: "))
+t = float(input("Enter Time: "))
+
+# Function call
+simple_interest(p, r, t)
+     #Output
+Enter Principal: 400000
+Enter Rate: 2
+Enter Time: 1
+Simple Interest is: 8000.0
