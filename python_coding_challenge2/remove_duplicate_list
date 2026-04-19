@@ -1,0 +1,16 @@
+# This program removes duplicate elements from a list
+
+lst = [1, 1, 2, 3]
+
+result = []   # empty list to store unique elements
+
+# Loop through list
+for i in lst:
+    if i not in result:   # check if element not already present
+        result.append(i)  # add to result
+
+# Print result
+print(result)
+
+# Output:
+# [1, 2, 3]
