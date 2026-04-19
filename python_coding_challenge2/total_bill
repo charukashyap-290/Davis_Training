@@ -1,0 +1,16 @@
+# This function calculates total bill amount
+
+def total_bill(items):
+    total = 0
+    
+    # Loop through list
+    for i in items:
+        total += i
+    
+    return total
+
+# Calling function
+print(total_bill([100, 200, 300]))
+
+# Output:
+# 600
