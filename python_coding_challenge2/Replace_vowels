@@ -1,0 +1,20 @@
+#This program replace vowels with '*'
+
+# Take input
+s = input("Enter string: ")
+
+result = ""
+
+# Loop through characters
+for ch in s:
+    if ch.lower() in "aeiou":   # check vowel
+        result += "*"
+    else:
+        result += ch
+
+# Print result
+print(result)
+
+# Output:
+# Enter string: hello
+# h*ll*
