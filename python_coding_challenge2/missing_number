@@ -1,0 +1,19 @@
+# This program finds missing number in a sequence
+
+lst = [1, 2, 4, 5]
+
+n = len(lst) + 1   # total numbers should be
+
+# Sum of first n natural numbers
+total = n * (n + 1) // 2
+
+# Sum of given list
+sum_lst = sum(lst)
+
+# Missing number
+missing = total - sum_lst
+
+print(missing)
+
+# Output:
+# 3
