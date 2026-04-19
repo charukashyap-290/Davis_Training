@@ -1,0 +1,23 @@
+#Question 28: Calculate electricity bill based on units consumed.
+#Input: Enter units
+#Output: Total bill amount
+# Electricity bill + discount
+
+units = int(input("Enter units: "))
+
+if units <= 100:
+    bill = units * 5
+elif units <= 200:
+    bill = 100 * 5 + (units - 100) * 7
+else:
+    bill = 100 * 5 + 100 * 7 + (units - 200) * 10
+
+# Discount condition
+if bill > 1000:
+    bill = bill * 0.9
+
+print("Final bill:", bill)
+
+     #Output:-
+Enter units: 12
+Final bill: 60
