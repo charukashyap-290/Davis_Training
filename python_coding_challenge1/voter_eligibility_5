@@ -1,0 +1,11 @@
+#Question 22: Check whether a person is eligible to vote.
+#Input: Enter age
+#Output: Eligible / Not Eligible
+# Direct boolean output
+
+age = int(input("Enter age: "))
+
+print("Eligible" if age >= 18 else "Not Eligible")
+    #Output:- 
+Enter age: 12
+Not Eligible
