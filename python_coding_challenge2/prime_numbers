@@ -1,0 +1,28 @@
+# This program checks whether a number is prime
+
+# Step 1: take input
+num = int(input("Enter number: "))
+
+# Step 2: assume number is prime
+is_prime = True
+
+# Step 3: numbers <= 1 are not prime
+if num <= 1:
+    is_prime = False
+
+else:
+    # Step 4: check divisibility from 2 to num-1
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False   # divisible → not prime
+            break              # stop checking further
+
+# Step 5: print result
+if is_prime:
+    print("Prime")
+else:
+    print("Not Prime")
+
+# Output:
+# Enter number: 7
+# Prime
