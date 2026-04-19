@@ -1,0 +1,12 @@
+# This program prints multiplication table of a number
+
+# Take input
+n = int(input("Enter number: "))
+
+# Loop from 1 to 10
+for i in range(1, 11):
+    print(n * i, end=" ")   # print in same line
+
+# Output:
+# Enter number: 3
+# 3 6 9 12 15 18 21 24 27 30
