@@ -1,0 +1,14 @@
+#Question 8: Calculate electricity bill based on units consumed.
+#Input: Enter units
+#Output: Total bill amount
+# Flat rate method
+
+units = int(input("Enter units consumed: "))
+rate_per_unit = 8
+
+total_bill = units * rate_per_unit
+
+print("Total electricity bill is:", total_bill)
+     #Output
+Enter units consumed: 23
+Total electricity bill is: 184
