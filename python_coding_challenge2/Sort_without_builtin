@@ -1,0 +1,15 @@
+# This program sorts list without using sort()
+
+lst = [3, 1, 2]
+
+# Bubble sort logic
+for i in range(len(lst)):
+    for j in range(len(lst)-1):
+        if lst[j] > lst[j+1]:   # compare adjacent elements
+            lst[j], lst[j+1] = lst[j+1], lst[j]  # swap
+
+# Print sorted list
+print(lst)
+
+# Output:
+# [1, 2, 3]
