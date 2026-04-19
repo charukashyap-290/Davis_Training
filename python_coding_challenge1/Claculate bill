@@ -1,0 +1,16 @@
+#Question 6: A shopkeeper wants to calculate total bill after discount.
+#Input: Enter price and discount percentage
+#Output: Final price after discount
+#Answer :-
+# Using direct formula in one line
+
+price = float(input("Enter original price: "))
+discount = float(input("Enter discount percentage: "))
+
+final_price = price * (1 - discount / 100)
+
+print("Final price after discount is:", final_price)
+     #Output
+Enter original price: 8000
+Enter discount percentage: 20
+Final price after discount is: 6400.0
