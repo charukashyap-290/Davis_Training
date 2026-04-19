@@ -1,0 +1,22 @@
+#Question 32: Check whether a person is eligible to vote.
+#Input: Enter age
+#Output: Eligible / Not Eligible
+# Count eligible voters
+
+n = int(input("Enter number of people: "))
+
+eligible_count = 0
+
+for _ in range(n):
+    age = int(input("Enter age: "))
+    if age >= 18:
+        eligible_count += 1
+
+print("Total eligible voters:", eligible_count)
+
+    #Output:- 
+Enter number of people: 3
+Enter age: 23
+Enter age: 14
+Enter age: 18
+Total eligible voters: 2
