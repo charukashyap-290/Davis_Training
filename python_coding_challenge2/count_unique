@@ -1,0 +1,16 @@
+# This program counts unique elements in a list
+
+lst = [1, 1, 2, 3, 3]
+
+unique = []   # list to store unique values
+
+# Loop through list
+for i in lst:
+    if i not in unique:
+        unique.append(i)
+
+# Print count of unique elements
+print(len(unique))
+
+# Output:
+# 3
