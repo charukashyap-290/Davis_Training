@@ -1,0 +1,16 @@
+# This program calculates total sales of the week
+
+# List of sales for 7 days
+sales = [100, 200, 150, 300, 250, 400, 100]
+
+total = 0   # variable to store total
+
+# Loop through each day's sale
+for i in sales:
+    total = total + i    # add each value to total
+
+# Print final total
+print(total)
+
+# Output:
+# 1500
