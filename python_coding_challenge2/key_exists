@@ -1,0 +1,14 @@
+# This program checks if a key exists in dictionary
+
+d = {"a": 1, "b": 2}
+
+key = input("Enter key: ")
+
+if key in d:     # check key presence
+    print("Yes")
+else:
+    print("No")
+
+# Output:
+# Enter key: a
+# Yes
