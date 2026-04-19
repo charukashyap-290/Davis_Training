@@ -1,0 +1,17 @@
+#Question 14: Print all even numbers between 1 to N.
+#Input: Enter N
+#Output: Even numbers list
+# Storing in list
+
+n = int(input("Enter N: "))
+
+even_numbers = []
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        even_numbers.append(i)
+
+print("Even numbers:", even_numbers)
+    #Output 
+Enter N: 23
+Even numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
