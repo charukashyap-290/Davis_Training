@@ -1,0 +1,22 @@
+# This program checks whether a number is palindrome or not
+
+# Take input
+num = int(input("Enter number: "))
+
+temp = num   # store original number
+rev = 0      # variable for reversed number
+
+# Reverse the number
+while num > 0:
+    rev = rev * 10 + num % 10
+    num = num // 10
+
+# Compare original and reversed number
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+# Output:
+# Enter number: 121
+# Palindrome
