@@ -1,0 +1,19 @@
+#Question 31: A shopkeeper wants to calculate total bill after discount.
+#Input: Enter price and discount percentage
+#Output: Final price after discount
+# Discount + GST
+
+price = float(input("Enter price: "))
+discount = float(input("Enter discount %: "))
+
+discounted_price = price - (price * discount / 100)
+
+gst = discounted_price * 0.18  # 18% GST
+final_price = discounted_price + gst
+
+print("Final price after discount + GST:", final_price)
+
+     #Output:-
+Enter price: 300000
+Enter discount %: 1
+Final price after discount + GST: 350460.0
