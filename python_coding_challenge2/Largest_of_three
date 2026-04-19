@@ -1,0 +1,15 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+largest = a
+if b > largest:
+    largest = b
+if c > largest:
+    largest = c
+
+print(largest)
+
+# Output:
+# 10 25 15
+# 25
