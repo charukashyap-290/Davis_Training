@@ -1,0 +1,21 @@
+# This function returns all even numbers from a list
+
+def get_even(lst):
+    result = []   # Step 1: empty list to store even numbers
+
+    # Step 2: check each number
+    for num in lst:
+        if num % 2 == 0:   # Step 3: check if divisible by 2
+            result.append(num)   # Step 4: add to result list
+
+    return result   # Step 5: return final list
+
+# Step 6: call function
+numbers = [1, 2, 3, 4]
+even_numbers = get_even(numbers)
+
+# Step 7: print result
+print(even_numbers)
+
+# Output:
+# [2, 4]
