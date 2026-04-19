@@ -1,0 +1,17 @@
+# This program counts how many numbers are greater than 50
+
+# Given list
+lst = [10, 60, 30, 80]
+
+count = 0   # variable to count numbers
+
+# Loop through list
+for i in lst:
+    if i > 50:        # check condition
+        count += 1    # increase count
+
+# Print result
+print(count)
+
+# Output:
+# 2
