@@ -1,0 +1,18 @@
+# This program rotates list by one position
+
+lst = [1, 2, 3]
+
+# Take last element and move it to front
+last = lst[-1]
+
+# Shift elements right
+for i in range(len(lst)-1, 0, -1):
+    lst[i] = lst[i-1]
+
+lst[0] = last
+
+# Print result
+print(lst)
+
+# Output:
+# [3, 1, 2]
