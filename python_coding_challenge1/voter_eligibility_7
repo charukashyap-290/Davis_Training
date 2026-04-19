@@ -1,0 +1,19 @@
+#Question 27: Check whether a person is eligible to vote.
+#Input: Enter age
+#Output: Eligible / Not Eligible
+
+
+n = int(input("Enter number of persons: "))
+
+for i in range(n):
+    age = int(input("Enter age: "))
+    if age >= 18:
+        print("Eligible")
+    else:
+        print("Not Eligible")
+     #Output:-
+Enter number of persons: 2
+Enter age: 12
+Not Eligible
+Enter age: 34
+Eligible
