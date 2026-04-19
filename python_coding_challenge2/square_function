@@ -1,0 +1,10 @@
+# This function returns square of a number
+
+def square(n):
+    return n * n
+
+# Call function
+print(square(5))
+
+# Output:
+# 25
