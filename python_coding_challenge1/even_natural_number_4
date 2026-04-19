@@ -1,0 +1,12 @@
+#Question 24: Print all even numbers between 1 to N.
+#Input: Enter N
+#Output: Even numbers list
+
+n = int(input("Enter N: "))
+
+even_numbers = list(filter(lambda x: x % 2 == 0, range(1, n + 1)))
+
+print("Even numbers:", even_numbers)
+   #Output:-  
+Enter N: 12
+Even numbers: [2, 4, 6, 8, 10, 12]
