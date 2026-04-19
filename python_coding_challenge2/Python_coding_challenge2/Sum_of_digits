@@ -1,0 +1,19 @@
+# This program finds sum of digits of a number
+
+# Take input
+num = int(input("Enter number: "))
+
+sum = 0   # variable to store sum
+
+# Loop until number becomes 0
+while num > 0:
+    digit = num % 10   # get last digit
+    sum += digit       # add digit to sum
+    num = num // 10    # remove last digit
+
+# Print result
+print(sum)
+
+# Output:
+# Enter number: 123
+# 6
