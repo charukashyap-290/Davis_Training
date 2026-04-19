@@ -1,0 +1,22 @@
+# This program finds duplicate characters in a string
+
+# Take input
+s = input("Enter string: ")
+
+seen = set()
+duplicates = set()
+
+# Loop through string
+for ch in s:
+    if ch in seen:
+        duplicates.add(ch)   # add duplicate
+    else:
+        seen.add(ch)
+
+# Print duplicates
+for ch in duplicates:
+    print(ch, end=" ")
+
+# Output:
+# Enter string: programming
+# r g m
