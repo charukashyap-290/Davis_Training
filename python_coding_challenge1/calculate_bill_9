@@ -1,0 +1,15 @@
+#Question 33: Calculate electricity bill based on units consumed.
+#Input: Enter units
+#Output: Total bill amount
+units = int(input("Enter units: "))
+rate = 6
+
+bill = units * rate
+
+print("Total bill:", bill)
+
+if bill > 1000:
+    print("High electricity usage")
+     #Output:-
+Enter units: 12
+Total bill: 72
