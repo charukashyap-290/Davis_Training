@@ -1,0 +1,21 @@
+#Question 13: Calculate electricity bill based on units consumed.
+#Input: Enter units
+#Output: Total bill amount
+# Using dictionary for slab rates
+
+units = int(input("Enter units consumed: "))
+
+rates = {100: 5, 200: 7, "above": 10}
+bill = 0
+
+if units <= 100:
+    bill = units * rates[100]
+elif units <= 200:
+    bill = 100 * rates[100] + (units - 100) * rates[200]
+else:
+    bill = 100 * rates[100] + 100 * rates[200] + (units - 200) * rates["above"]
+
+print("Total bill:", bill)
+    #Output 
+Enter units consumed: 45
+Total bill: 225
