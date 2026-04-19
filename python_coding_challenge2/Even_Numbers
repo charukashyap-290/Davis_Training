@@ -1,0 +1,13 @@
+# This program prints all even numbers from 1 to N
+
+# Take input from user
+n = int(input("Enter N: "))
+
+# Loop from 1 to N
+for i in range(1, n + 1):
+    if i % 2 == 0:        # check if number is divisible by 2
+        print(i, end=" ") # print even number in same line
+
+# Output:
+# Enter N: 10
+# 2 4 6 8 10
