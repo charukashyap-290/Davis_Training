@@ -1,0 +1,13 @@
+#This program calculate factoriql of a number
+
+#Take input 
+n = int(input("Enter number: "))
+fact = 1   #initial value
+
+#Multiply numbers from 1 to n 
+for i in range (1, n+1):
+    fact = fact * i
+
+    #Print Factorial
+    print(fact)
+    
